@@ -1,0 +1,200 @@
+/*Styles for myprofile*/
+/*Normalize code*/
+html {font-family: sans-serif;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+body{margin:0;padding:0;border:0;} /* This removes the border around the view port in old versions of IE */ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {display: block;} audio,canvas,progress,video {display: inline-block; vertical-align: baseline;} audio:not([controls]) { display: none;height: 0;} [hidden],template {display: none;}
+/*!Might affect some designs!*/a { background: transparent; } a:active,a:hover {outline: 0;} 
+abbr[title] {border-bottom: 1px dotted;} b, strong {font-weight: bold;} dfn {font-style: italic;} h1 {font-size: 2em; margin: 0.67em 0;} mark {background: #ff0; color: #000;} small {font-size: 80%;} sub, sup {font-size: 75%; line-height: 0; position: relative; vertical-align: baseline;} sup {top: -0.5em;} sub {bottom: -0.25em; }
+img {border: 0;} svg:not(:root) { overflow: hidden;}
+figure {margin: 1em 40px;}hr {-moz-box-sizing: content-box; box-sizing: content-box;height: 0;} pre {overflow: auto;} code,kbd,pre,samp {font-family: monospace, monospace; font-size: 1em;}
+button, input, optgroup, select, textarea {color: inherit;font: inherit;margin: 0;}
+button {overflow: visible;}button, select { text-transform: none; }
+button, html input[type="button"],input[type="reset"],input[type="submit"] {-webkit-appearance: button;cursor: pointer;}
+
+/*debugging aid	
+* { background-color: rgba(255,0,0,.2); }
+* * { background-color: rgba(0,255,0,.2); }
+* * * { background-color: rgba(0,0,255,.2); }
+* * * * { background-color: rgba(255,0,255,.2); }
+* * * * * { background-color: rgba(0,255,255,.2); }
+* * * * * * { background-color: rgba(255,255,0,.2); }
+*/
+/*General styles
+===========================================================*/
+body{
+	color: #000;
+	width:100%;
+	min-width: 1024px;
+}
+#intro {
+	width:969px;
+	margin:2% auto;
+	background-color:yellow;
+	padding: 25px;
+}
+#intro h1 p{
+	font-family: ;
+}
+
+#container {
+	/*paper like appearance*/
+	width:1024px;
+	margin:5% auto;
+	border-left: solid #d6d6d6 1px;
+	border-top: solid #d6d6d6 1px;
+    background-color: ffffff;
+    box-shadow: 0px 0px 5px 5px #e3e3e3;
+
+    /*flexbox setup*/
+    display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+
+	-moz-flex-direction:column;
+	-webkit-flex-direction:column;
+	flex-direction:column;
+
+	-moz-justify-content:center;
+	-webkit-justify-content:center;
+ 	justify-content:center;
+}
+.tabs{
+	padding-bottom: 50px;
+	width: 100%;
+	margin: auto;
+}
+/*Header section (first CV page)
+============================================================*/
+h1#title { 
+	display:block;
+	text-align: center;
+	font-family: serif;
+
+}
+
+header{
+	width:100%;
+
+	 /*flexbox setup*/
+    display: -webkit-flex;
+	display: -moz-flex;
+	display:flex;
+
+	-moz-flex-direction:column;
+	-webkit-flex-direction:column;
+	flex-direction:column;
+
+	-moz-justify-content:center;
+	-webkit-justify-content:center;
+ 	justify-content:center;
+}
+.head-box{
+	width:100%;
+	margin:auto;
+	padding:0px 40px;
+}
+section h2{
+	font-size: 130%;
+}
+/***Head articles***/
+/*articles elements*/
+h3.section-heading{
+	text-decoration: underline;
+	color:#4B6B7E;
+}
+span.emphasize{
+	font-style: italic;
+	color:#560074;
+}
+/*articles*/
+section.head-article1 {
+	float: left;
+	position: relative;
+	margin-left:10%;
+}
+section.head-article2 {
+	float: left;
+	position: relative;
+	margin-left:0px;
+	width:30%;
+}
+.head-article2 dt{
+	margin-left: 20px;
+}
+.head-article2 dd {
+	padding:0px;
+	margin-left: 0px;
+}
+.head-article4 {
+	float: left;
+	position: relative;
+	margin-left:0px;
+	width:42%;
+}
+.head-article5 {
+	position:relative;
+	margin:0px;
+	padding: 0px;
+	text-align: justify;
+	width:90%;
+}
+/****Other sections
+============================================================*/
+#separator{
+	background: #5C849C;
+	width: 100%;
+	height:30px;
+	padding:0;
+	margin:40px auto;
+}
+.design{
+	position: relative;
+	background: #fff url('../images/separators.jpg') repeat-x;
+	min-height:30px;
+	width:100%;
+	z-index: 0;
+
+}
+
+.design > h3 {
+	display: inline-block; /*allows to apply both horizontal and vertical margins*/
+	position: relative;
+	color:#5c849c;
+	background-color: #fff;
+	margin-top: 5px;
+	margin-left: 30px;
+	padding:5px;
+
+	z-index: 1;
+}
+
+.drop-down {
+	display: none;/*required for jQuerry slideToggle*/
+	padding: 0 50px;
+	width:90%;
+}
+/*Education*/
+table{
+	width:100%;
+	border-collapse: collapse;
+}
+td {
+	border: 1px solid black;
+}
+td.date {
+	width:25%;
+	
+}
+td.content {
+	width:75%;
+}
+span.bold {
+	font-weight: bold;
+}
+span.italic {
+	font-style: italic;
+}
+/*Footer
+============================================================*/
+
+/*Media queries
+============================================================*/
