@@ -178,20 +178,27 @@ table{
 	border-collapse: collapse;
 }
 td {
-	border: 1px solid black;
+	/*border: 1px solid black;*/
+	text-align: justify;
+
 }
 td.date {
 	width:25%;
+	vertical-align: top;
 	
 }
 td.content {
 	width:75%;
+	padding-bottom:5px;
 }
 span.bold {
 	font-weight: bold;
 }
 span.italic {
 	font-style: italic;
+}
+tr.table-separator td {
+	border:5px;
 }
 /*Footer
 ============================================================*/
