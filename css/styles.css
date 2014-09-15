@@ -139,6 +139,14 @@ section.head-article2 {
 }
 /****Other sections
 ============================================================*/
+/****Temporary classes****/
+.inserted-paragraph {
+	padding-left: 20px;
+	color: red;
+	font-weight: bold;
+}
+
+/****Permanent classes****/
 #separator{
 	background: #5C849C;
 	width: 100%;
@@ -172,15 +180,18 @@ section.head-article2 {
 	padding: 0 50px;
 	width:90%;
 }
-/*Education*/
+
+/***Styles for drop-down sections***/
 table{
 	width:100%;
-	border-collapse: collapse;
 }
 td {
 	/*border: 1px solid black;*/
 	text-align: justify;
 
+}
+th.expanded {
+	text-align: left;
 }
 td.date {
 	width:25%;
@@ -191,17 +202,22 @@ td.content {
 	width:75%;
 	padding-bottom:5px;
 }
+
+/*Styles for specific lines of drop-down sections*/
 span.bold {
 	font-weight: bold;
 }
 span.italic {
 	font-style: italic;
 }
-tr.table-separator td {
-	border:5px;
+td.table-separator {
+	padding-bottom:15px;
 }
 /*Footer
 ============================================================*/
-
+footer p {
+	text-align:center;
+	font-size: 70%;
+}
 /*Media queries
 ============================================================*/
