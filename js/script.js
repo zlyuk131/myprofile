@@ -20,9 +20,9 @@ $(document).ready(function(){
 		else {
 			$(insertMessage).insertBefore($(this).parent().find(".drop-down"));
 		}
-	//undo all action of the previous event	
+	//undo all action of the previous event	 
 	}).on("mouseleave",function(){
-		$(this).css('cursor','auto');
+		$(this).css('cursor','auto'); 
 		$(".inserted-paragraph").remove();
 	});
 });
